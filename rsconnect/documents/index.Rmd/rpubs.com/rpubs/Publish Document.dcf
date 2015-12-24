@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+bundleId:
+        https://api.rpubs.com/api/v1/document/136837/34b2229bdda144bb98615df7587d0199
+url: http://rpubs.com/cheaven88/136837
+when: 1450932807.33889

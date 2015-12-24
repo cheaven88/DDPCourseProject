@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Course Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Course Project">
+  <meta name="author" content="Chelsea Heaven">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Course Project</h1>
+    <h2>Exploring How Agency Characteristics Affect Long Term Care Costs</h2>
+    <p>Chelsea Heaven<br/>12/23/2015</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Aging in the United States</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The population in the United States is aging rapidly. Most people alive today are enjoying much longer lifespans than their ancestors. According to the <a href="http://www.aoa.acl.gov/Aging_Statistics/future_growth/future_growth.aspx">Administration on Aging Data</a> the aging trend will continue into 2015. </p></li>
+<li><p>Living longer means needing to plan for expenses that were difficult for our ancestors to fathom - such as long term care costs. Long-term care refers to the medical and non-medical care many of us will need as we age and develop chronic illnesses or a disability.</p></li>
+<li><p>Home health care and hospice care are prefered methods of long-term care over nursing care due to their person-centered approach. However, according to the <a href="https://www.genworth.com/corporate/about-genworth/industry-expertise/cost-of-care.html">Genworth&#39;s Cost of Care Calculator</a>, care costs for home health care are expected to rise an average of 35% in the next 10 years.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Exploring Long Term Care Costs</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>One of the issues affecting long-term care costs is the type of agency that is providing care. Due to a lack of standardization across the industry, agencies will charge many different rates for similar services rendered.</p></li>
+<li><p>In order to help others have an idea of the current costs for home health care and hospice care by agency type, I developed the Exploring Long Term Care Costs app in Shiny. My hope is that this app will allow others to understand the costs associated with long-term care so they can begin planning for the expense.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How To Use The App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The dataset for the app includes a representitive sample of 6639 patients in the United States who received home health or hospice care from an agency. </p></li>
+<li><p>Simply select the filters you want to see and the app will generate a histogram of the total amount paid by the patient count. The filters availiable to be selected are as follows: </p>
+
+<ul>
+<li>Home Health or Hospice Patient</li>
+<li>Specialized or Non-Specialized Agency</li>
+<li>For Profit or Not-For-Profit Status</li>
+<li>Chain Agency or Not A Chain Agency</li>
+</ul></li>
+<li><p>In addition, the app will calculate the average cost per patient and the number of patients for the filters you have selected.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Dataset Details</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The data for this app came from the <a href="http://www.cdc.gov/nchs/nhhcs/nhhcs_questionnaires.htm">2007 National Home and Hospice Care Survey</a>. One of the many purposes of this survey was to collect information on the agencies providing home health and hospice care in the United States and how much patients were paying for these services.</p></li>
+<li><p>The survey was administered to home health and hospice care agencies by the CDC. A total of 1,545 agencies were selected to be part of the survey. The data for 9416 patients were collected, but cost data was only availiable for the 6639 patients used in the data tool.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Histogram for Total Cost of Care</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>For reference while using the app, the cost of care histogram for all the 6639 patients is as follows.</li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Aging in the United States'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Exploring Long Term Care Costs'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How To Use The App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Dataset Details'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Histogram for Total Cost of Care'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+   
+  </html>
